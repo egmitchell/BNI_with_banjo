@@ -1,0 +1,118 @@
+###-------------------------------------------------
+### Input parameter settings file for 
+###
+###       BA         Bayesian 
+###         N        Network Inference
+###          J       with Java
+###           O      Objects
+###
+### Banjo is licensed from Duke University.
+### Copyright (c) 2005-07 by Alexander J. Hartemink.
+### All rights reserved.
+###
+### Settings file consistent with version 2.0.0
+### 
+###-------------------------------------------------
+##>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+##frequently changing things
+
+dataset = 						MingAllStationsGroups.txt
+observationsFile = 					MingAllStationsGroups.txt
+reportFile = 						report_MingAllStationsGroups.txt
+fileNameForTopGraph = 					graph_MingAllStationsGroups.txt
+#mustNotBePresentEdgesFile = 				MingAllStationsGroups.str
+#mustBePresentEdgesFile = 				MingAllStationsGroups.str #must be in the samples file
+maxTime=3m
+maxParentCount = 					3
+maxParentCountForRestart =   				3
+
+inputDirectory = envinput
+
+outputDirectory = envoutput
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+###-------------------------------------------------
+### Project information
+###-------------------------------------------------
+
+project = MingAllStationsGroups       
+user = Ming/Emily
+
+
+###-------------------------------------------------
+### Search component specifications
+###-------------------------------------------------
+
+searcherChoice = greedy
+proposerChoice = RandomLocalMove
+evaluatorChoice = default
+deciderChoice = default
+
+###-------------------------------------------------
+### Input and output locations
+###-------------------------------------------------
+
+
+
+###-------------------------------------------------
+### We require this only to validate the input
+###-------------------------------------------------
+
+variableCount =  9
+
+
+variableNames = Polychaetes_Serpulidae	Lobster_Nephropidae	gastropods	bivalves	cephalopods	scaphopods	scleractinia	echinoderms	brachiopods
+
+
+
+###-------------------------------------------------
+### Network structure properties
+###-------------------------------------------------
+
+minMarkovLag = 0
+maxMarkovLag = 0
+dbnMandatoryIdentityLags = 
+equivalentSampleSize = 1
+
+
+
+###-------------------------------------------------
+### Network structure properties optional
+###-------------------------------------------------
+
+initialStructureFile = 
+
+nBestNetworks = 3
+bestNetworksAre = 
+screenReportingInterval = 
+fileReportingInterval = 
+
+###-------------------------------------------------
+### Parameters used by specific search methods
+###-------------------------------------------------
+
+### For simulated annealing:
+#initialTemperature =                            1000
+#coolingFactor =                                  0.9
+#reannealingTemperature =                         500
+#maxAcceptedNetworksBeforeCooling =              1000
+#maxProposedNetworksBeforeCooling =             10000
+#minAcceptedNetworksBeforeReannealing =           200
+
+### For greedy:
+minProposedNetworksAfterHighScore =             1000
+minProposedNetworksBeforeRestart =              3000
+maxProposedNetworksBeforeRestart =              5000
+restartWithRandomNetwork =                       yes
+
+###-------------------------------------------------
+### Command line user interface options
+###-------------------------------------------------
+
+askToVerifySettings =                             no
+
+
+createDotOutput = yes
+computeInfluenceScores = yes
+dotFileExtension = dot
+fullPathToDotExecutable = C:/Program Files/Graphviz2.22/bin/dot.exe
