@@ -38,7 +38,7 @@ banjoex noGroup.txt 14 bootstrap=95% repeat=10
 ('dot' execution) The attempted execution of 'dot' to create the graphics file 'D:\Dropbox\methods\BanjoStuff\results\noGroup_14\noGroup_38\graph_noGroup_4.png' did not succeed. No output has been produced.
 
 banjo data=noGroup.txt maxruns=14 bootstrap=38 maxparents=3 #5
-cd C:\Emily\banjo && java -Xmx200m -jar banjo.jar settingsFile=D:\Dropbox\methods\BanjoStuff\settings.txt maxProposedNetworks=14000000 inputDirectory=D:\Dropbox\methods\BanjoStuff\results\noGroup_14\noGroup_38\samples observationsFile=noGroup_5.txt outputDirectory=D:\Dropbox\methods\BanjoStuff\results\noGroup_14\noGroup_38 reportFile=report_noGroup_5.txt fileNameForTopGraph=graph_noGroup_5 maxParentCount=3 maxParentCountForRestart=3
+cd C:\Emily\banjo && java -Xmx200m -jar banjo.jar settingsFile=D:\Dropbox\methods\BanjoStuff\settings.txt maxProposedNetworks=14000000 inputDirectory=D:\Dropbox\methods\BanjoStuff\results\noGroup_14\noGroup_38\samples observationsFile=noGroup_5.txt outputDirectory=D:\BanjoWork\results\noGroup_14\noGroup_38 reportFile=report_noGroup_5.txt fileNameForTopGraph=graph_noGroup_5 maxParentCount=3 maxParentCountForRestart=3
 The system cannot find the path specified.
 banjoex: Banjo execution failed
 CallStack (from HasCallStack):
