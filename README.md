@@ -4,7 +4,7 @@ for use with banjo
 #download isntall banjo
 #download and install java
 
-#create a folder called Emily directly on your C drive with the address C:\Emily
+#create a folder called Emily directly on your C drive and put another folder called banjo within it with the address C:\Emily\banjo
 #put banjo.jar in that folder
 
 #create a new folder from which you will run your analyses. e.g. BanjoWork
